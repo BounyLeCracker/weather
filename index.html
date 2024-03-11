@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo du jour</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+
+</head>
+
+<body>
+
+    <!-- Create a main section with a title, a text and a button -->
+    <main>
+        <header>
+            <img src="./assets/293.webp" alt="Logo du site">
+            <nav>
+                <span id="hamburger"></span>
+                <ul class="classList toggle">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="previsions.html">Prévisions</a></li>
+                    <li><a href="carte.html">Carte</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="en/index.html">English</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h2>Bienvenue sur le site de la météo du jour</h2>
+            <p>Ce site vous permet de connaître la météo actuelle et les prévisions pour votre ville de résidence. Vous
+                pouvez également consulter la carte interactive pour voir la météo dans d'autres régions du monde. Si
+                vous
+                avez des questions ou des suggestions, n'hésitez pas à nous contacter via le formulaire de contact.</p>
+            <button onclick="showWeatherForOther()" id="open-popup">Afficher la météo d'une autre ville</button>
+            <div id="weather">
+                <p>Pays : <span id="countrySpan"></span></p>
+                <p>Ville : <span id="citySpan"></span></p>
+                <p>Température : <span id="tempSpan"></span></p>
+                <p>Météo : <span id="weatherSpan"></span></p>
+                <img src="" alt="" id="imgWeather">
+
+                <div id="weather-details">
+                    <p>Latitude<br><span id="lat"></span></p>
+                    <p>Longitude<br><span id="lon"></span></p>
+                    <p>Jour<br><span id="isDay"></span></p>
+                    <p>Vitesse du vent<br><span id="windSpeed"></span></p>
+                    <p>Direction du vent<br><span id="windDir"></span></p>
+                    <p>Pression atmosphérique<br><span id="pressure"></span></p>
+                    <p>Précipitations<br><span id="precip"></span></p>
+                    <p>Humidité<br><span id="humidity"></span></p>
+                    <p>Nuages<br><span id="cloud"></span></p>
+                    <p>Indice UV<br><span id="uv"></span></p>
+                </div>
+            </div>
+        </div>
+        <!-- Structure du popup -->
+        <div id="popup" class="popup-container">
+            <div class="popup-content">
+                <h1>Rechercher une ville</h1>
+                <label for="ville">Votre Ville</label>
+                <input type="text" name="ville" id="ville" placeholder="Entrez le nom de votre ville">
+                <button type="button" id="submit">Rechercher</button>
+                <button id="close-popup">X</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; Tout Droit Reservé - Créé par Bounyamine </p>
+        </footer>
+    </main>
+
+    <script src="assets/showWeather.js"></script>
+    <script src="assets/hamburger.js"></script>
+    <script src="assets/deleteAdds.js"></script>
+</body>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo du jour</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Créer une section principale avec un titre et un tableau -->
+    <main>
+        <header>
+            <img src="./assets/293.webp" alt="Logo du site">
+            <nav>
+                <span id="hamburger"></span>
+                <ul class="classList toggle">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="previsions.html">Prévisions</a></li>
+                    <li><a href="carte.html">Carte</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="en/previsions.html">English</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h2>Prévisions météo pour les prochains jours</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Température</th>
+                    <th>Météo</th>
+                </tr>
+                <tr>
+                    <td>07/02/2024</td>
+                    <td>25 °C / 77 °F</td>
+                    <td><img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="Sunny"></td>
+                </tr>
+                <tr>
+                    <td>08/02/2024</td>
+                    <td>23 °C / 73 °F</td>
+                    <td><img src="https://cdn.weatherapi.com/weather/64x64/day/143.png" alt="Cloudy"></td>
+                </tr>
+                <tr>
+                    <td>09/02/2024</td>
+                    <td>22 °C / 72 °F</td>
+                    <td><img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="Rainy"></td>
+                </tr>
+                <tr>
+                    <td>10/02/2024</td>
+                    <td>24 °C / 75 °F</td>
+                    <td><img src="https://cdn.weatherapi.com/weather/64x64/day/293.png" alt="Sunny"></td>
+                </tr>
+                <tr>
+                    <td>11/02/2024</td>
+                    <td>26 °C / 79 °F</td>
+                    <td><img src="https://cdn.weatherapi.com/weather/64x64/day/296.png" alt="Sunny"></td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <p>&copy; Tout Droit Reservé - Créé par Bounyamine </p>
+        </footer>
+
+    </main>
+
+    <script src="assets/hamburger.js"></script>
+    <script src="assets/deleteAdds.js"></script>
+
+</body>
+
+</html>

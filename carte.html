@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo du jour</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Ajouter le lien vers le fichier CSS de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <!-- Créer une section principale avec un titre, un élément de géolocalisation et une carte interactive -->
+    <main>
+        <header>
+            <img src="./assets/293.webp" alt="Logo du site">
+            <nav>
+                <span id="hamburger"></span>
+                <ul class="classList toggle">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="previsions.html">Prévisions</a></li>
+                    <li><a href="carte.html">Carte</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="en/carte.html">English</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h2>Carte météo interactive</h2>
+            <div id="geolocation"></div>
+            <div id="map"></div>
+        </div>
+        <footer>
+            <p>&copy; Tout Droit Reservé - Créé par Bounyamine </p>
+        </footer>
+    </main>
+
+    <script src="assets/hamburger.js"></script>
+
+    <!-- Ajouter le script de Leaflet -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="assets/getGeolocalisation.js"></script>
+    <script src="assets/deleteAdds.js"></script>
+</body>
+
+</html>
