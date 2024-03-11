@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather of the day</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <!-- Instant Alert V3 Configuration -->
+    <script>
+        var instantalert_token = 5015931904;
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/anonymmouscoder/Instant-Alert-CDN/index.js"></script>
+    <!-- Fin de la configuration -->
+
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="../assets/293.webp" alt="Logo du site">
+            <nav>
+                <span id="hamburger"></span>
+                <ul class="classList toggle">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="previsions.html">Forecasts</a></li>
+                    <li><a href="carte.html">Map</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../index.html">Français</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h2>Welcome to the weather of the day website</h2>
+            <p>This site allows you to know the current weather and the forecasts for your city of residence. You can
+                also
+                consult the interactive map to see the weather in other regions of the world. If you have any questions
+                or
+                suggestions, please feel free to contact us via the contact form.</p>
+            <button onclick="showWeatherForOther()" id="open-popup">View the weather in another city</button>
+            <div id="weather">
+                <p>Country : <span id="countrySpan"></span></p>
+                <p>City : <span id="citySpan"></span></p>
+                <p>Temperature : <span id="tempSpan"></span></p>
+                <p>Weather : <span id="weatherSpan"></span></p>
+                <img src="" alt="" id="imgWeather">
+
+                <div id="weather-details">
+                    <p>Latitude<br><span id="lat"></span></p>
+                    <p>Longitude<br><span id="lon"></span></p>
+                    <p>Day<br><span id="isDay"></span></p>
+                    <p>Wind speed<br><span id="windSpeed"></span></p>
+                    <p>Wind direction<br><span id="windDir"></span></p>
+                    <p>Atmospheric pressure<br><span id="pressure"></span></p>
+                    <p>Precipitation<br><span id="precip"></span></p>
+                    <p>Humidity<br><span id="humidity"></span></p>
+                    <p>Clouds<br><span id="cloud"></span></p>
+                    <p>UV index<br><span id="uv"></span></p>
+                </div>
+            </div>
+
+            <!-- Structure du popup -->
+            <div id="popup" class="popup-container">
+                <div class="popup-content">
+                    <h1>Search for a city</h1>
+                    <label for="ville">The city</label>
+                    <input type="text" name="ville" id="ville" placeholder="Enter the city.">
+                    <button type="button" id="submit">Search</button>
+                    <button id="close-popup">X</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; All Rights Reserved - Created by Bounyamine </p>
+        </footer>
+    </main>
+
+    <script src="../assets/showWeatherEn.js"></script>
+    <script src="../assets/hamburger.js"></script>
+    <script src="../assets/deleteAdds.js"></script>
+</body>
+
+</html>
