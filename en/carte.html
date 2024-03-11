@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather of the day</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+    <!-- Add the link to the Leaflet CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <!-- Create a main section with a title, a geolocation element and an interactive map -->
+    <main>
+        <header>
+            <img src="../assets/293.webp" alt="Logo du site">
+            <nav>
+                <span id="hamburger"></span>
+                <ul class="classList toggle">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="previsions.html">Forecasts</a></li>
+                    <li><a href="carte.html">Map</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../carte.html">Français</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <h2>Interactive weather map</h2>
+        <div id="geolocation"></div>
+        <div id="map"></div>
+        </div>
+        <footer>
+            <p>&copy; All Rights Reserved - Created by Bounyamine </p>
+        </footer>
+    </main>
+
+    <script src="../assets/hamburger.js"></script>
+
+    <!-- Add the Leaflet script -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../assets/getGeolocalisation.js"></script>
+    <script src="../assets/deleteAdds.js"></script>
+</body>
+
+</html>
